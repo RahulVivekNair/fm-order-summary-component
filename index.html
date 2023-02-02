@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | NFT preview card component</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paleBlue: 'hsl(225, 100%, 94%)',
+            brightBlue: 'hsl(245, 75%, 52%)',
+            veryPaleBlue: 'hsl(225, 100%, 98%)',
+            desBlue: 'hsl(224, 23%, 55%)',
+            darkBlue: 'hsl(223, 47%, 23%)',
+
+          },
+          fontFamily: {
+            'redhat': ['Red Hat Display'],
+          },
+          backgroundImage: {
+            mobile: "url('/images/pattern-background-mobile.svg')",
+            desktop: "url('/images/pattern-background-desktop.svg')",
+          },
+        }
+      }
+    }
+  </script>
+  <title>Frontend Mentor | Order summary card</title>
+</head>
+
+<body class="bg-paleBlue bg-mobile md:bg-desktop lg:[background-position-y:-33%] bg-no-repeat min-h-screen bg-contain">
+  <div class="w-full min-h-screen flex items-center justify-center">
+    <div class="shadow-xl text-center max-w-[26rem] m-6 bg-white rounded-2xl font-redhat font-medium">
+      <img src=" images/illustration-hero.svg" alt="" class="rounded-t-2xl">
+      <div class="p-6 sm:p-10">
+        <h2 class="text-2xl font-black mb-5 text-darkBlue">Order Summary</h2>
+        <p class="mb-8 text-desBlue text-base px-1">You can now listen to millions of songs, audiobooks, and podcasts on
+          any
+          device anywhere you like!</p>
+        <div class=" flex flex-row justify-between bg-veryPaleBlue p-4 rounded-xl items-center">
+          <div class="flex flex-row">
+            <img src="images/icon-music.svg" alt="">
+            <div class="ml-5">
+              <h3 class="font-bold text-darkBlue">Annual Plan</h3>
+              <p class="text-desBlue">$59.99/year</p>
+            </div>
+          </div>
+          <p
+            class="text-center font-bold underline text-brightBlue text-sm cursor-pointer hover:no-underline hover:text-brightBlue/70 duration-150">
+            Change</p>
+        </div>
+        <button
+          class="mt-8 my-6 bg-brightBlue w-full rounded-xl p-3 text-white hover:bg-brightBlue/70 duration-150 shadow-brightBlue/20 shadow-xl">Proceed
+          to
+          Payment</button>
+        <p class="text-desBlue  font-bold hover:text-darkBlue duration-150 cursor-pointer">Cancel Order</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
